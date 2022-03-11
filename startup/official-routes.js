@@ -22,6 +22,7 @@ const userTransmissionRequests = require("./../routers/official/transmission/use
 //---
 const userTaskTags = require("./../routers/official/tasks/tags");
 const userIntervalTasks = require("./../routers/official/tasks/interval-tasks");
+const userMyTasks = require("./../routers/official/tasks/my-tasks");
 //---
 
 module.exports = function (app) {
@@ -79,4 +80,5 @@ module.exports = function (app) {
   //---
   app.use("/api/official/tasks/user-task-tags", userTaskTags);
   app.use("/api/official/tasks/user-interval-tasks", userIntervalTasks);
+  app.use("/api/official/tasks/user-my-tasks", userMyTasks);
 };
